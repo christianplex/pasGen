@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .contrasena {
+            font-size: 2em;
+            font-weight: bold;
+            color: #007BFF;
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Contraseñas Memorables</h1>
+        <p>Tu nueva contraseña es:</p>
+        <div class="contrasena">{{ contrasena }}</div>
+        <br>
+        <button class="btn" onclick="window.location.reload()">Generar otra</button>
+    </div>
+</body>
+</html>
