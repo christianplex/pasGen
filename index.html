@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plexarian Pass | Generador Premium</title>
+    <meta name="description" content="Generador de contraseñas memorables con palabras reales y seguridad garantizada.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <main class="container">
+        <div class="glass-card">
+            <header class="app-header">
+                <div class="logo-container">
+                    <span class="logo-icon">🔒</span>
+                    <h1>Plexarian<span class="accent">Pass</span></h1>
+                </div>
+                <p>Contraseñas memorables y seguras</p>
+            </header>
+
+            <section class="display-container">
+                <div class="password-box" id="password-display">••••••••••••</div>
+                <div class="strength-meter">
+                    <div class="strength-bar" id="strength-bar"></div>
+                </div>
+            </section>
+
+            <section class="controls">
+                <div class="control-group">
+                    <div class="length-header">
+                        <label for="length-slider" id="length-label">Longitud: <span id="length-value">12</span> caracteres</label>
+                    </div>
+                    <input type="range" id="length-slider" min="6" max="16" value="12" class="slider">
+                </div>
+
+                <button id="generate-btn" class="main-btn">
+                    <span class="btn-text">GENERAR Y COPIAR</span>
+                    <span class="btn-icon">⚡</span>
+                </button>
+            </section>
+        </div>
+    </main>
+
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
